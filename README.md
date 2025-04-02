@@ -27,6 +27,7 @@ npm install
 
 * React e React DOM
 * TypeScript
+* API REST Countries
 * @react-input/mask (para campo de data com máscara)
 * Material-UI (para ícones)
 
@@ -49,8 +50,14 @@ npm run dev
 ## Este projeto permite:
 
 1- Visualizar uma lista de países obtidos da API REST Countries
+
 2- Selecionar um país para marcar uma viagem
+
 3- Adicionar um local específico dentro do país
+
 4- Definir uma data meta para a viagem (formato mm/yyyy)
+
 5- Visualizar os destinos de viagem em cards
+
 6- Editar ou excluir destinos de viagem
+
