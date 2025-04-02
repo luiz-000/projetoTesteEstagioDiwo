@@ -1,0 +1,205 @@
+.containerInputs {
+    
+    width: 100%;
+    height: 10rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: #4F9419;
+}
+
+.containerInputs input , select {
+
+    height: 3rem;
+
+    border-radius: 7px;
+
+    color: #868686;
+    background-color: #FFFFFF;
+
+    border: none;
+
+    padding: 1rem;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.containerInputs label {
+
+    color: #FFFFFF;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.inputSelect select {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 19rem;
+    padding: 0.9rem 0 0 1rem;
+
+    cursor: pointer;
+}
+
+.inputLocal input {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 28rem;
+}
+
+.inputMeta input {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 15rem;
+}
+
+.containerInputs button {
+
+    width: 13rem;
+    height: 3rem;
+
+    margin-top: 1rem;
+
+    border-radius: 7px;
+
+    color: #FFFFFF;
+    background-color: #006C18;
+    
+    border: 1px solid green;
+
+    font-family: Roboto;
+    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 0px 0px 10px 4px #FFFFFF;
+    }
+}
+
+.containerButtonsEdit button {
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+@media (max-width: 1280px) {
+
+    .inputSelect select {
+        width: 13rem;
+    }
+
+    .inputLocal input {
+        width: 15rem;
+    }
+
+    .inputMeta input {
+        width: 12rem;
+    }
+
+    .containerInputs button {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 890px) {
+
+    .inputSelect select {
+        width: 10rem;
+    }
+
+    .inputLocal input {
+        width: 12rem;
+    }
+
+    .inputMeta input {
+        width: 11rem;
+    }
+
+    .containerInputs button {
+        width: 11rem;
+    }
+}
+
+@media (max-width: 785px) {
+
+    .containerInputs {
+        height: auto;
+        padding: 2rem;
+
+        flex-direction: column;
+    }
+
+    .inputSelect select {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .inputLocal input {
+        width: 24rem;
+        margin-bottom: 1rem;
+    }
+
+    .inputMeta input {
+        width: 24rem;
+        margin-bottom: 1rem;
+    }
+
+    .containerInputs button {
+        width: 24rem;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .containerInputs {
+        height: auto;
+        padding: 2rem;
+
+        flex-direction: column;
+    }
+
+    .inputSelect select {
+        width: 15rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .inputLocal input {
+        width: 15rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .inputMeta input {
+        width: 15rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .containerInputs button {
+        width: 15rem;
+    }
+}
