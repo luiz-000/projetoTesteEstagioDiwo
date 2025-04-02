@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# Explicação de como instalar e executar o projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O projeto foi desenvolvido com React e TypeScript, e utiliza a API REST Countries e a biblioteca react-input-mask, conforme solicitado na descrição do mesmo. Projeto feito como desafio para a vaga de estágio em front-end.
 
-Currently, two official plugins are available:
+<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Passo 1: Obter o código-fonte
 
-## Expanding the ESLint configuration
+## O repositório pode ser clonado usando Git ou baixar os arquivos do projeto em formato ZIP.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+git clone [URL-DO-REPOSITÓRIO]
+cd [NOME-DA-PASTA]
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<br>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Passo 2: Instalar as dependências
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## Navegue até a pasta do projeto e instale as dependências:
+
 ```
+npm install
+```
+
+### As principais dependências incluem:
+
+* React e React DOM
+* TypeScript
+* @react-input/mask (para campo de data com máscara)
+* Material-UI (para ícones)
+
+<br>
+
+# Passo 3: Executar o projeto
+
+## Agora você pode iniciar o servidor de desenvolvimento:
+
+```
+npm run dev
+```
+
+### O projeto será executado em http://localhost:5173
+
+<br>
+
+# Funcionalidades do Projeto
+
+## Este projeto permite:
+
+1- Visualizar uma lista de países obtidos da API REST Countries
+2- Selecionar um país para marcar uma viagem
+3- Adicionar um local específico dentro do país
+4- Definir uma data meta para a viagem (formato mm/yyyy)
+5- Visualizar os destinos de viagem em cards
+6- Editar ou excluir destinos de viagem
