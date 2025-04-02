@@ -1,10 +1,11 @@
-import './NavBar.module.css'
+import style from './NavBar.module.css'
+
 
 function NavBar () {
 
     return (
-        <div>
-            <p> NavBar </p>
+        <div className={style.containerNavBar}>
+            <img src='/logoNavBar.png' alt='Logo da empresa'></img>
         </div>
     )
 }
